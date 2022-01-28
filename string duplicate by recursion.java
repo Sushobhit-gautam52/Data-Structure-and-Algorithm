@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class GFG{
+class Stringa_duplicate{
     static String replaceCharacter(String str,char c1, char c2) {
         if (str.length() == 1) {
             return str;
