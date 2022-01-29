@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class remove_duplicate {
+    public static String remove(String str){
+     if(str.length()<=1){
+         return str;
+     }
+     if(str.charAt(0)==str.charAt(1)){
+         return remove(str.substring(1));
+        }
+     else{
+         return str.charAt(0)+remove(str.substring(1));
+     }
+    }
+
+    public static void main(String[] args) {
+        System.out.println("enter a string");
+        Scanner sc=new Scanner(System.in);
+        String str=sc.next();
+        System.out.println(remove(str));
+    }
+}
